@@ -6,7 +6,7 @@ number1 = st.number_input("Insert a number", placeholder= "Enter your 1st number
 number2 = st.number_input("Insert a number", placeholder="Enter your 2nd number")
 
 operation = st.selectbox("Select the operation",
-                         ("Addition","Subtraction"))
+                         ("Addition","Subtraction","Multiplication","Division"))
 
 ret = st.button("Calculate")
 
@@ -15,5 +15,9 @@ if ret:
         st.write(number1 + number2)
     elif operation == "Subtraction":
         st.write(number1 - number2)
-        st.balloons()
+    elif operation == "Multiplication":
+        st.write(number1 * number2)
+    elif operation == "Division":
+        st.write(number1 / number2)
+    
 
